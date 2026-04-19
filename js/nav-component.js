@@ -8,16 +8,16 @@ const NAV_HTML = `
 <header class="topbar">
   <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
   <div class="topbar-brand">
-    <span>💡</span> LiteRight Academy
+    <span>💡</span> LITELAB Academy
   </div>
-  <div class="topbar-title">Lighting Design — Complete Course Package</div>
+  <div class="topbar-title">Lighting Design — Professional Course Package</div>
 </header>
 
 <!-- ─── Sidebar Navigation ─── -->
 <nav class="sidebar" id="sidebar">
   <div class="nav-section">Overview</div>
   <a class="nav-link" data-page="home" href="/index.html">
-    <span class="nav-icon">🏠</span> Course Home
+    <span class="nav-icon">🏠</span> Academy Home
   </a>
   <a class="nav-link" data-page="tree" href="/pages/tree.html">
     <span class="nav-icon">🌳</span> Course Tree
@@ -28,7 +28,7 @@ const NAV_HTML = `
 
   <div class="nav-section">Full Course</div>
   <a class="nav-link" data-page="course-m1" href="/pages/course-m1.html">
-    <span class="nav-icon">1️⃣</span> Module 1: Introduction
+    <span class="nav-icon">1️⃣</span> Module 1: Introduction to LITELAB
     <span class="nav-badge">30m</span>
   </a>
   <a class="nav-link" data-page="course-m2" href="/pages/course-m2.html">
@@ -60,15 +60,15 @@ const NAV_HTML = `
 
   <div class="nav-section">Synthesia Scripts — Unit 1</div>
   <a class="nav-link" data-page="s01" href="/pages/s01.html">
-    <span class="nav-icon">🎬</span> 1.1 Presentation
+    <span class="nav-icon">🎬</span> 1.1 Presentation & History
     <span class="nav-badge">14m</span>
   </a>
   <a class="nav-link" data-page="s02" href="/pages/s02.html">
-    <span class="nav-icon">🎬</span> 1.2 Influences
+    <span class="nav-icon">🎬</span> 1.2 Core Values & Expertise
     <span class="nav-badge">13m</span>
   </a>
   <a class="nav-link" data-page="s03" href="/pages/s03.html">
-    <span class="nav-icon">🎬</span> 1.3 Course Overview
+    <span class="nav-icon">🎬</span> 1.3 Roadmap & Methodology
     <span class="nav-badge">3m</span>
   </a>
 
@@ -159,11 +159,9 @@ function initLayout(currentPageId) {
       let path = sectionId === 'home' ? 'index.html' : `pages/${sectionId}.html`;
       if (isSubPage) {
           path = sectionId === 'home' ? '../index.html' : `${sectionId}.html`;
-          // If the link is to another page in the same directory, we don't need 'pages/'
           if (path.startsWith('pages/')) path = path.replace('pages/', '');
       }
       
-      // If it's a link, just change href. If not, add click listener.
       if (el.tagName === 'A') {
           el.href = path;
           el.removeAttribute('onclick');
@@ -177,7 +175,6 @@ function initLayout(currentPageId) {
   fixLinks();
 }
 
-// Global UI Handlers
 function toggleSidebar() {
   document.getElementById('sidebar').classList.toggle('open');
 }
