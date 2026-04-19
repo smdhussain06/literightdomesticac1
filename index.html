@@ -521,6 +521,72 @@ hr {
 .video-info h3 span { background: var(--accent); color: white; font-size: 11px; padding: 4px 8px; border-radius: 6px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; text-shadow: none; box-shadow: 0 4px 10px rgba(217,119,6,0.3); }
 .video-info p { margin: 0; color: #cbd5e1; font-size: 14px; font-weight: 500; }
 
+/* ─── Update Logs ─── */
+.update-logs {
+  margin: 32px 0;
+}
+.update-log-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.update-log-item:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.1);
+}
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+.log-title {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-primary);
+  flex: 1;
+}
+.log-time {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  margin-left: 16px;
+}
+.log-status {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-bottom: 12px;
+}
+.status-waiting {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent);
+}
+.status-in-progress {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--accent-blue);
+}
+.status-completed {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--accent-green);
+}
+.log-progress {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.log-details {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
 </style>
 </head>
 <body>
@@ -542,6 +608,9 @@ hr {
   </a>
   <a class="nav-link" onclick="showSection('tree')">
     <span class="nav-icon">🌳</span> Course Tree
+  </a>
+  <a class="nav-link" onclick="showSection('logs')">
+    <span class="nav-icon">📝</span> Update Logs
   </a>
 
   <div class="nav-section">Full Course</div>
@@ -769,6 +838,31 @@ hr {
     <li>Synthesia avatars speak at ~<strong>150 words/minute</strong></li>
     <li>Export at <strong>1080p minimum</strong> for LMS quality</li>
   </ul>
+  <a class="back-top" onclick="showSection('home')">← Back to Home</a>
+</div>
+
+
+<!-- ╔══════════════════════════════════════╗ -->
+<!-- ║       UPDATE LOGS                    ║ -->
+<!-- ╚══════════════════════════════════════╝ -->
+<div class="section" id="logs">
+  <h1>📝 Update Logs</h1>
+  <p class="subtitle">Track all course content creation progress and updates with timestamps and status</p>
+
+  <div class="update-logs">
+    <div class="update-log-item">
+      <div class="log-header">
+        <span class="log-title">🎬 Course Content Creation — Framing Content Stretches</span>
+        <span class="log-time">Apr 19, 2026 · 10:45 AM</span>
+      </div>
+      <span class="log-status status-waiting">WAITING FOR REVIEW</span>
+      <div class="log-progress"><strong>Progress:</strong> Framing content stretches from Domestica Course — Ready for @hussain review</div>
+      <div class="log-details">
+        Content framework created for all 4 units with proper pacing and learning objectives. All video scripts structured and ready for feedback from @hussain before final implementation.
+      </div>
+    </div>
+  </div>
+
   <a class="back-top" onclick="showSection('home')">← Back to Home</a>
 </div>
 
