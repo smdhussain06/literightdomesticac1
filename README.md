@@ -17,3 +17,10 @@ This single-file offline-compatible web application contains:
 
 ## 🛠️ Usage
 This repository is pre-configured to be hosted on **GitHub Pages**. Simply access the domain to read the content. It operates entirely on Vanilla CSS and semantic HTML so there are no dependencies to install.
+
+## 📜 Progress Logs
+
+### April 21, 2026, 4:00 PM
+- Received a request to progress on making the PowerPoint PDF document.
+- Task: Customize the PPT, originally attached with the Domestika course, into LiteLab course content, incorporating their specific information.
+- Contact: Initiated through Regil bro.
