@@ -115,6 +115,23 @@ const NAV_HTML = `
       <span class="nav-icon">🎬</span> 4.5 Representation
       <span class="nav-badge">8m</span>
     </a>
+
+    <div class="nav-section nav-dropdown-toggle" onclick="this.classList.toggle('open')">
+      Course Presentations <span class="dd-arrow">▸</span>
+    </div>
+    <div class="nav-dropdown-content">
+      <a class="nav-link" href="/c1/resources/U2-01/index.html"><span class="nav-icon">📊</span> P1: Identify Needs</a>
+      <a class="nav-link" href="/c1/resources/U2-02/index.html"><span class="nav-icon">📊</span> P2: Materials</a>
+      <a class="nav-link" href="/c1/resources/U2-03/index.html"><span class="nav-icon">📊</span> P3: Glossary</a>
+      <a class="nav-link" href="/c1/resources/U3-01/index.html"><span class="nav-icon">📊</span> P4: Concepts</a>
+      <a class="nav-link" href="/c1/resources/U3-02/index.html"><span class="nav-icon">📊</span> P5: Luminescence</a>
+      <a class="nav-link" href="/c1/resources/U3-03/index.html"><span class="nav-icon">📊</span> P6: Hierarchies</a>
+      <a class="nav-link" href="/c1/resources/U4-01/index.html"><span class="nav-icon">📊</span> P7: Light Source</a>
+      <a class="nav-link" href="/c1/resources/U4-02/index.html"><span class="nav-icon">📊</span> P8: Drawing Light</a>
+      <a class="nav-link" href="/c1/resources/U4-03/index.html"><span class="nav-icon">📊</span> P9: Conceptual</a>
+      <a class="nav-link" href="/c1/resources/U4-04/index.html"><span class="nav-icon">📊</span> P10: How to Draw</a>
+      <a class="nav-link" href="/c1/resources/U4-05/index.html"><span class="nav-icon">📊</span> P11: Final Plans</a>
+    </div>
   </div>
 </nav>
 
