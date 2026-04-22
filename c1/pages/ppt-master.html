@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master PPT Preview - LiteRight Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../resources/style.css">
+    <style>
+        :root {
+            --sidebar-width: 200px;
+        }
+        body {
+            background: #111;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar-master {
+            width: var(--sidebar-width);
+            height: 100vh;
+            background: #000;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 20px;
+            overflow-y: auto;
+            border-right: 1px solid #333;
+            z-index: 2000;
+        }
+        .sidebar-master h2 {
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        .sidebar-master a {
+            display: block;
+            color: #888;
+            text-decoration: none;
+            padding: 10px 0;
+            font-size: 12px;
+            font-weight: 700;
+            transition: color 0.2s;
+        }
+        .sidebar-master a:hover {
+            color: #fff;
+        }
+        .main-content {
+            margin-left: var(--sidebar-width);
+            flex: 1;
+            padding: 40px;
+        }
+        .unit-group {
+            margin-bottom: 100px;
+            border-top: 1px solid #333;
+            padding-top: 40px;
+        }
+        .unit-group::before {
+            content: attr(id);
+            display: block;
+            color: #fff;
+            font-size: 40px;
+            font-weight: 900;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+        .print-fab {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-weight: 900;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            z-index: 3000;
+        }
+        @media print {
+            .sidebar-master, .print-fab { display: none !important; }
+            .main-content { margin-left: 0 !important; padding: 0 !important; }
+            .unit-group { margin-bottom: 0 !important; border: none !important; padding-top: 0 !important; }
+            .unit-group::before { display: none !important; }
+            body { background: #fff !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar-master">
+        <h2>Modules</h2>
+        <a href="#U2-01">U2-01</a><a href="#U2-02">U2-02</a><a href="#U2-03">U2-03</a><a href="#U3-01">U3-01</a><a href="#U3-02">U3-02</a><a href="#U3-03">U3-03</a><a href="#U4-01">U4-01</a><a href="#U4-02">U4-02</a><a href="#U4-03">U4-03</a><a href="#U4-04">U4-04</a><a href="#U4-05">U4-05</a>
+        <hr style="border: 0; border-top: 1px solid #333; margin: 20px 0;">
+        <a href="../index.html">← Back Home</a>
+    </div>
+    <div class="main-content">
+        <div id="U2-01" class="unit-group"><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content title-slide">
+            <div class="slide-text">
+                <p class="subtitle">Assignment 02</p>
+                <h1>Identify<br>the Needs<br>of a Space<br>& User</h1>
+                <p style="font-size: 18px; max-width: 500px; margin-top: 10px; font-weight: 300;">Analyzing the intersection of spatial requirements and user-centric behavior for interior lighting design.</p>
+                <div class="instructor-info">
+                    <div class="avatar">
+                        <img src="../resources/U2-01/assets/avatar.webp" alt="Ifthi Sir">
+                    </div>
+                    <div class="instructor-text">
+                        <p class="role">Instructor</p>
+                        <p class="instructor-name">IFTHIKHAR ILYAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U2-01/assets/img-000.jpg" alt="Space overview">
+            </div>
+        </div>
+        <div class="slide-number">01</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Objective</h3>
+                <h2>The Challenge</h2>
+                <p>Identifying the precise needs of the inhabitant to inform technical lighting choices and aesthetic atmosphere.</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">11.20</div>
+                        <div class="stat-label">Area (m²)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">01</div>
+                        <div class="stat-label">Primary User</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">05+</div>
+                        <div class="stat-label">Key Activities</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image dual-image">
+                <div class="image-wrapper">
+                    <img src="../resources/U2-01/assets/img-001.jpg" alt="Room seen from door">
+                    <span>View: Entry Point</span>
+                </div>
+                <div class="image-wrapper">
+                    <img src="../resources/U2-01/assets/img-002.jpg" alt="Room seen from bed">
+                    <span>View: Perspective</span>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">02</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U2-01/assets/img-003.jpg" alt="Space details">
+            </div>
+            <div class="slide-text">
+                <h3>Spatial Audit</h3>
+                <h2>Details of the Space</h2>
+                <p>A multi-functional bedroom featuring a dedicated workstation, sleeping area, and storage solutions.</p>
+                <p><strong>Zoning:</strong> Desk, double bed, bureau, closet, and vanity table.</p>
+                <p><strong>Natural Light:</strong> South-facing garden window providing consistent daylighting.</p>
+            </div>
+        </div>
+        <div class="slide-number">03</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Functional Map</h3>
+                <h2>Activities & Objects</h2>
+                <div class="activity-list">
+                    <div class="activity-category">
+                        <h3>Core Functions</h3>
+                        <ul>
+                            <li>Rest & Recovery</li>
+                            <li>Digital Work</li>
+                            <li>Critical Reading</li>
+                        </ul>
+                        <h3 style="margin-top: 24px;">Key Assets</h3>
+                        <ul>
+                            <li>Professional Work Desk</li>
+                            <li>Primary Bed Unit</li>
+                        </ul>
+                    </div>
+                    <div class="activity-category">
+                        <h3>Peripheral</h3>
+                        <ul>
+                            <li>Crafts & Arts</li>
+                            <li>Media Consumption</li>
+                            <li>Meditation</li>
+                        </ul>
+                        <h3 style="margin-top: 24px;">Surface Finish</h3>
+                        <p style="font-size: 12px; font-weight: 700; text-transform: uppercase;">Matte Black Laminate (Desk)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U2-01/assets/img-004.jpg" alt="Activity Area">
+            </div>
+        </div>
+        <div class="slide-number">04</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Persona Study</h3>
+                <h2>User Profile</h2>
+                <div class="user-card">
+                    <p class="user-name">Ana Flores</p>
+                    <p class="user-meta">32 Years • Freelancer • Single</p>
+                    <div class="user-details" style="margin-top: 20px;">
+                        <p><strong>Behavior:</strong> Ana balances high-focus digital work with low-energy creative hobbies. Her routine demands versatile lighting for both screen tasks and fine motor crafts like embroidery.</p>
+                    </div>
+                    <div class="cta-line"></div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U2-01/assets/ana_flores.png" alt="Ana Flores">
+            </div>
+        </div>
+        <div class="slide-number">05</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h1>Ready to<br>Design</h1>
+                <p>Data-driven spatial analysis leads to superior lighting outcomes.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 12px; letter-spacing: 4px; font-weight: 800; text-transform: uppercase;">LiteRight Academy | lighting design course</p>
+            </div>
+        </div>
+        <div class="slide-number">06</div>
+    </section></div><div id="U2-02" class="unit-group"><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content title-slide">
+            <div class="slide-text">
+                <p class="subtitle">Assignment 03</p>
+                <h1>The<br>Materials<br>in the<br>Space</h1>
+                <p style="font-size: 18px; max-width: 500px; margin-top: 10px; font-weight: 300;">Identifying and analyzing the surfaces and materials that interact with light in your work environment.</p>
+                <div class="instructor-info">
+                    <div class="avatar">
+                        <img src="../resources/U2-02/assets/avatar.webp" alt="IFTHIKHAR ILYAS">
+                    </div>
+                    <div class="instructor-text">
+                        <p class="role">Instructor</p>
+                        <p class="instructor-name">IFTHIKHAR ILYAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U2-02/assets/img-000.jpg" alt="Materials overview">
+            </div>
+        </div>
+        <div class="slide-number">01</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Surface Study</h3>
+                <h2>Desk Finish</h2>
+                <p>Material: <strong>Matte Black Plastic Laminate</strong>.</p>
+                <p>Lighting Interaction:</p>
+                <ul>
+                    <li>Direct light creates significant reflections on the "matte" finish.</li>
+                    <li>Strategic positioning relative to light sources can mitigate unwanted glare.</li>
+                </ul>
+            </div>
+            <div class="slide-image dual-image">
+                <div class="image-wrapper">
+                    <img src="../resources/U2-02/assets/img-001.jpg" alt="Reflections with light on">
+                    <span>With Ceiling Light: Visible Glare</span>
+                </div>
+                <div class="image-wrapper">
+                    <img src="../resources/U2-02/assets/img-002.jpg" alt="No reflections">
+                    <span>Away from Source: No Glare</span>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">02</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U2-02/assets/img-005.jpg" alt="Notebook and sun glare">
+            </div>
+            <div class="slide-text">
+                <h3>Light Management</h3>
+                <h2>Contrast & Glare</h2>
+                <p>Usage of non-reflective materials like notebooks helps maintain visual comfort during intensive work.</p>
+                <p><strong>Sun Exposure:</strong> Direct sunlight through windows can be disruptive, necessitating adaptive lighting controls.</p>
+            </div>
+        </div>
+        <div class="slide-number">03</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Environmental Control</h3>
+                <h2>Black-out Curtains</h2>
+                <p>Material: <strong>75% Polyester, 25% Fiberglass</strong>.</p>
+                <p>Properties:</p>
+                <ul>
+                    <li>Effectively blocks exterior light ingress.</li>
+                    <li>White finish reflects interior ambient light, contributing to spatial brightness.</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U2-02/assets/img-003.jpg" alt="Black-out curtains">
+            </div>
+        </div>
+        <div class="slide-number">04</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U2-02/assets/img-004.jpg" alt="Wall finish">
+            </div>
+            <div class="slide-text">
+                <h3>Reflectance Study</h3>
+                <h2>Wall Finish</h2>
+                <p>Material: <strong>Vinyl Paint</strong>.</p>
+                <p>Strategic use of color prevents excessive internal reflections during the day. However, it requires artificial light supplementation on cloudy days or during night hours.</p>
+            </div>
+        </div>
+        <div class="slide-number">05</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h1>Analysis<br>Complete</h1>
+                <p>Materiality is the foundation of light-space interaction.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 12px; letter-spacing: 4px; font-weight: 800; text-transform: uppercase;">LiteRight Academy | lighting design course</p>
+            </div>
+        </div>
+        <div class="slide-number">06</div>
+    </section></div><div id="U2-03" class="unit-group"><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content title-slide">
+            <div class="slide-text">
+                <p class="subtitle">Reference Guide</p>
+                <h1>Glossary<br>of Lighting<br>Terms</h1>
+                <p style="font-size: 18px; max-width: 500px; margin-top: 10px; font-weight: 300;">A comprehensive guide to the nomenclature, units, and concepts of professional lighting design.</p>
+                <div class="instructor-info">
+                    <div class="avatar">
+                        <img src="../resources/U2-03/assets/avatar.webp" alt="IFTHIKHAR ILYAS">
+                    </div>
+                    <div class="instructor-text">
+                        <p class="role">Instructor</p>
+                        <p class="instructor-name">IFTHIKHAR ILYAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U2-03/assets/glossary_title.png" alt="Glossary overview">
+            </div>
+        </div>
+        <div class="slide-number">01</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Basics</h3>
+                <h2>The Fundamentals</h2>
+                <div class="activity-list">
+                    <div class="activity-category">
+                        <h3>Light</h3>
+                        <p style="font-size: 14px;">Radiant energy (380-770nm) capable of producing visual sensation.</p>
+                        <h3 style="margin-top: 10px;">Natural Light</h3>
+                        <p style="font-size: 14px;">Generated naturally, primarily by the Sun.</p>
+                    </div>
+                    <div class="activity-category">
+                        <h3>Artificial Light</h3>
+                        <p style="font-size: 14px;">Man-made sources: lamps, street lights, strobes.</p>
+                        <h3 style="margin-top: 10px;">Bioluminescence</h3>
+                        <p style="font-size: 14px;">Light created by living organisms.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U2-03/assets/fundamentals.png" alt="Natural vs Artificial Light">
+            </div>
+        </div>
+        <div class="slide-number">02</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h3>Engineering</h3>
+                <h2>Units of Measurement</h2>
+                <div class="stats-grid" style="margin-bottom: 40px;">
+                    <div class="stat-item">
+                        <div class="stat-value">lm</div>
+                        <div class="stat-label">Luminous Flux (Lumen)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">lx</div>
+                        <div class="stat-label">Illuminance (Lux)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">cd</div>
+                        <div class="stat-label">Candela (Intensity)</div>
+                    </div>
+                </div>
+                <div class="slide-image" style="height: 300px; width: 600px; margin: 0 auto;">
+                    <img src="../resources/U2-03/assets/units.png" alt="Light Units Diagram">
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">03</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Physics</h3>
+                <h2>Light Interactions</h2>
+                <ul>
+                    <li><strong>Reflection:</strong> Ability of surfaces to bounce light (Reflectance).</li>
+                    <li><strong>Absorption:</strong> Ability to neither reflect nor transmit light.</li>
+                    <li><strong>Transmission:</strong> Ability of materials to allow light passage (Transmittance).</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U2-03/assets/interactions.png" alt="Reflection, Absorption, Transmission">
+            </div>
+        </div>
+        <div class="slide-number">04</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U2-03/assets/richard_kelly_triad.png" alt="Qualities of light">
+            </div>
+            <div class="slide-text">
+                <h3>Philosophy</h3>
+                <h2>Lighting Qualities</h2>
+                <p><strong>Ambient Lighting:</strong> General illumination throughout an area.</p>
+                <p><strong>Focal Glow:</strong> The pool of light that draws attention and separates the important.</p>
+                <p><strong>Play of Brilliants:</strong> Dynamic light that creates interest and stimulates the spirit.</p>
+            </div>
+        </div>
+        <div class="slide-number">05</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Specifications</h3>
+                <h2>Technical Metrics</h2>
+                <p><strong>Watts:</strong> Electrical power consumption.</p>
+                <p><strong>CCT:</strong> Correlated Color Temperature (Kelvin).</p>
+                <p><strong>IP Rating:</strong> Ingress Protection (Solids/Liquids).</p>
+                <p><strong>IK Rating:</strong> Impact Protection (Mechanical).</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U2-03/assets/tech_specs.png" alt="Technical symbols">
+            </div>
+        </div>
+        <div class="slide-number">06</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U2-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Technology</h3>
+                <h2>Light Sources</h2>
+                <div class="activity-list">
+                    <div class="activity-category">
+                        <ul>
+                            <li><strong>LED:</strong> Light Emitting Diode.</li>
+                            <li><strong>OLED:</strong> Organic LED (Diffuse area source).</li>
+                            <li><strong>Incandescence:</strong> Light from heat (Filament).</li>
+                        </ul>
+                    </div>
+                    <div class="activity-category">
+                        <ul>
+                            <li><strong>Fluorescence:</strong> Excited radiation process.</li>
+                            <li><strong>Halogen:</strong> Efficient incandescent evolution.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image grid-image">
+                <img src="../resources/U2-03/assets/light_sources.png" alt="LED Technology">
+            </div>
+        </div>
+        <div class="slide-number">07</div>
+    </section></div><div id="U3-01" class="unit-group"><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content title-slide">
+            <div class="slide-text">
+                <p class="subtitle">Unit 03 — Theory</p>
+                <h1>Concepts<br>by Richard<br>Kelly</h1>
+                <p style="font-size: 18px; max-width: 500px; margin-top: 10px; font-weight: 300;">Exploring the tripartite language of light: Ambient Luminescence, Focal Glow, and Play of Brilliants.</p>
+                <div class="instructor-info">
+                    <div class="avatar">
+                        <img src="../resources/U3-01/assets/avatar.webp" alt="IFTHIKHAR ILYAS">
+                    </div>
+                    <div class="instructor-text">
+                        <p class="role">Instructor</p>
+                        <p class="instructor-name">IFTHIKHAR ILYAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/richard_kelly_title.png" alt="Richard Kelly Concepts">
+            </div>
+        </div>
+        <div class="slide-number">01</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>The Triad</h3>
+                <h2>Core Concepts</h2>
+                <ul>
+                    <li><strong>Ambient Luminescence:</strong> The light that provides general visibility. Background light.</li>
+                    <li><strong>Focal Glow:</strong> The pool of light that directs the eye. Task light.</li>
+                    <li><strong>Play of Brilliants:</strong> Dynamic light that creates interest and stimulates the spirit. Decorative light.</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/theory_recap.png" alt="Lighting Layers Diagram">
+            </div>
+        </div>
+        <div class="slide-number">02</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/img-001.jpg" alt="Corporate Offices View 1">
+            </div>
+            <div class="slide-text">
+                <h3>Case Study</h3>
+                <h2>Corporate Offices</h2>
+                <p>Observe the balanced ambient luminescence for a productive work environment, with focal glow over key circulation and work areas.</p>
+                <p class="instructor-note" style="font-size: 12px; color: var(--text-muted);">Photography: Patricia Carrington</p>
+            </div>
+        </div>
+        <div class="slide-number">03</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Case Study</h3>
+                <h2>Black Taiga</h2>
+                <p>Strong use of focal glow to highlight textural elements and architectural details.</p>
+                <p class="instructor-note" style="font-size: 12px; color: var(--text-muted);">Photography: Rodrigo Chapa</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/img-002.jpg" alt="Black Taiga">
+            </div>
+        </div>
+        <div class="slide-number">04</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/img-003.jpg" alt="Solé">
+            </div>
+            <div class="slide-text">
+                <h3>Case Study</h3>
+                <h2>Solé</h2>
+                <p>Integrated lighting creating a seamless blend of ambient luminescence and focal accents.</p>
+                <p class="instructor-note" style="font-size: 12px; color: var(--text-muted);">Photography: Rodrigo de la Garza</p>
+            </div>
+        </div>
+        <div class="slide-number">05</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Case Study</h3>
+                <h2>Marieta</h2>
+                <p>Play of brilliants in hospitality: creating an atmosphere that excites and engages visitors.</p>
+                <p class="instructor-note" style="font-size: 12px; color: var(--text-muted);">Photography: Rodrigo de la Garza</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/img-004.jpg" alt="Marieta">
+            </div>
+        </div>
+        <div class="slide-number">06</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/img-005.jpg" alt="Corporate Offices View 2">
+            </div>
+            <div class="slide-text">
+                <h3>Case Study</h3>
+                <h2>Corporate Offices</h2>
+                <p>Detailed view of focal glow application in workspace zoning.</p>
+                <p class="instructor-note" style="font-size: 12px; color: var(--text-muted);">Photography: Patricia Carrington</p>
+            </div>
+        </div>
+        <div class="slide-number">07</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Case Study</h3>
+                <h2>Madre Café</h2>
+                <p>Layered lighting design focusing on human experience and warmth.</p>
+                <p class="instructor-note" style="font-size: 12px; color: var(--text-muted);">Photography: Eduardo Sánchez Bal</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/img-006.jpg" alt="Madre Café View 1">
+            </div>
+        </div>
+        <div class="slide-number">08</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/img-007.jpg" alt="Blend Station">
+            </div>
+            <div class="slide-text">
+                <h3>Case Study</h3>
+                <h2>Blend Station</h2>
+                <p>Urban lighting that uses play of brilliants and focal glow to define space and brand identity.</p>
+                <p class="instructor-note" style="font-size: 12px; color: var(--text-muted);">Photography: Rodrigo Chapa</p>
+            </div>
+        </div>
+        <div class="slide-number">09</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Case Study</h3>
+                <h2>Beat It</h2>
+                <p>Dynamic lighting in retail spaces to guide customer journey via focal glow.</p>
+                <p class="instructor-note" style="font-size: 12px; color: var(--text-muted);">Photography: Patricia Carrington</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/img-008.jpg" alt="Beat It View 1">
+            </div>
+        </div>
+        <div class="slide-number">10</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/img-009.jpg" alt="Beat It View 2">
+            </div>
+            <div class="slide-text">
+                <h3>Case Study</h3>
+                <h2>Beat It</h2>
+                <p>Highlighting architectural accents through strategic play of brilliants.</p>
+                <p class="instructor-note" style="font-size: 12px; color: var(--text-muted);">Photography: Patricia Carrington</p>
+            </div>
+        </div>
+        <div class="slide-number">11</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Case Study</h3>
+                <h2>Bookstore & Café</h2>
+                <p>Colegio Nacional: Functional lighting for literacy combined with focal accents.</p>
+                <p class="instructor-note" style="font-size: 12px; color: var(--text-muted);">Photography: Grace Hoyle</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/img-010.jpg" alt="Bookstore and café">
+            </div>
+        </div>
+        <div class="slide-number">12</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U3-01/assets/img-011.jpg" alt="Madre Café View 2">
+            </div>
+            <div class="slide-text">
+                <h3>Case Study</h3>
+                <h2>Madre Café</h2>
+                <p>Evening atmosphere: the power of play of brilliants in hospitality.</p>
+                <p class="instructor-note" style="font-size: 12px; color: var(--text-muted);">Photography: Ricardo de la Concha</p>
+            </div>
+        </div>
+        <div class="slide-number">13</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h3>Exercise</h3>
+                <h2>Light Exercise</h2>
+                <p>Apply the concepts of Richard Kelly to your own space. Identify where you can improve the balance of layers.</p>
+                <div class="slide-image" style="height: 300px; width: 600px; margin: 30px auto;">
+                    <img src="../resources/U3-01/assets/img-012.jpg" alt="Exercise prompt">
+                </div>
+                <div class="cta-line"></div>
+                <p style="font-size: 12px; letter-spacing: 4px; font-weight: 800; text-transform: uppercase;">LiteRight Academy | lighting design course</p>
+            </div>
+        </div>
+        <div class="slide-number">14</div>
+    </section></div><div id="U3-02" class="unit-group"><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content title-slide">
+            <div class="slide-text">
+                <p class="subtitle">Assignment 02</p>
+                <h1>Identify<br>Lighting<br>Layers</h1>
+                <p style="font-size: 18px; max-width: 500px; margin-top: 10px; font-weight: 300;">Analyzing your space through the lens of Richard Kelly: Ambient Luminescence, Focal Glow, and Play of Brilliants.</p>
+                <div class="instructor-info">
+                    <div class="avatar">
+                        <img src="../resources/U3-02/assets/avatar.webp" alt="IFTHIKHAR ILYAS">
+                    </div>
+                    <div class="instructor-text">
+                        <p class="role">Instructor</p>
+                        <p class="instructor-name">IFTHIKHAR ILYAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U3-02/assets/theory_recap.png" alt="Lighting Layers Theory">
+            </div>
+        </div>
+        <div class="slide-number">01</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Application</h3>
+                <h2>Analysis in Space</h2>
+                <p>Identifying key lighting layers in a residential workstation environment.</p>
+                <div class="activity-list" style="margin-top: 40px;">
+                    <div class="activity-category">
+                        <h3>Ambient</h3>
+                        <p style="font-size: 14px;">Overall soft illumination provided by natural light or ceiling fixtures.</p>
+                    </div>
+                    <div class="activity-category">
+                        <h3>Focal</h3>
+                        <p style="font-size: 14px;">Targeted light for specific tasks, such as reading or drafting.</p>
+                    </div>
+                    <div class="activity-category">
+                        <h3>Play of Brilliants</h3>
+                        <p style="font-size: 14px;">Sparkle and decorative highlights that add character to the space.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <div class="dual-image" style="grid-template-columns: repeat(3, 1fr); height: 100%;">
+                    <div class="image-wrapper">
+                        <img src="../resources/U3-02/assets/img-001.jpg" alt="Ambient Luminescence">
+                        <span>Ambient</span>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="../resources/U3-02/assets/img-002.jpg" alt="Focal Glow">
+                        <span>Focal</span>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="../resources/U3-02/assets/img-003.jpg" alt="Play of Brilliants">
+                        <span>Play of Brilliants</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">02</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h1>Layers<br>Defined</h1>
+                <p>Understanding these layers is the first step towards professional lighting design.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 12px; letter-spacing: 4px; font-weight: 800; text-transform: uppercase;">LiteRight Academy | lighting design course</p>
+            </div>
+        </div>
+        <div class="slide-number">03</div>
+    </section></div><div id="U3-03" class="unit-group"><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content title-slide">
+            <div class="slide-text">
+                <p class="subtitle">Inspiration & Analysis</p>
+                <h1>Identify<br>Hierarchies<br>& Layers</h1>
+                <p style="font-size: 18px; max-width: 500px; margin-top: 10px; font-weight: 300;">Learning from the masters: a deep dive into global lighting design projects to identify structural layers and visual hierarchies.</p>
+                <div class="instructor-info">
+                    <div class="avatar">
+                        <img src="../resources/U3-03/assets/avatar.webp" alt="IFTHIKHAR ILYAS">
+                    </div>
+                    <div class="instructor-text">
+                        <p class="role">Instructor</p>
+                        <p class="instructor-name">IFTHIKHAR ILYAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U3-03/assets/title_bg.png" alt="Hierarchy overview">
+            </div>
+        </div>
+        <div class="slide-number">01</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Licht Kunst Licht</h3>
+                <h2>The Ash Steak House</h2>
+                <p>Observe how focal glow creates intimacy at dining tables while ambient layers define the industrial volume.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 14px; font-weight: 600;">Hierarchy: High Contrast</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U3-03/assets/steakhouse.png" alt="The Ash Steak House">
+            </div>
+        </div>
+        <div class="slide-number">02</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U3-03/assets/museu.png" alt="Museu Do Amanha">
+            </div>
+            <div class="slide-text">
+                <h3>LD Studio</h3>
+                <h2>Museu Do Amanha</h2>
+                <p>Strategic layers highlight the futuristic architecture, creating a beacon of light in Rio.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 14px; font-weight: 600;">Hierarchy: Architectural Branding</p>
+            </div>
+        </div>
+        <div class="slide-number">03</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>L'Observatoire International</h3>
+                <h2>The Vessel</h2>
+                <p>Integrated lighting layers that emphasize the structural rhythm and invite exploration.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 14px; font-weight: 600;">Hierarchy: Structural Definition</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U3-03/assets/vessel.png" alt="The Vessel">
+            </div>
+        </div>
+        <div class="slide-number">04</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U3-03/assets/ipanema.png" alt="Ipanema Residence">
+            </div>
+            <div class="slide-text">
+                <h3>LD Studio</h3>
+                <h2>Residence in Ipanema</h2>
+                <p>Residential hierarchies: balancing comfort, privacy, and aesthetic elegance through soft layers.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 14px; font-weight: 600;">Hierarchy: Visual Comfort</p>
+            </div>
+        </div>
+        <div class="slide-number">05</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>LumLum</h3>
+                <h2>Bookstore and Café</h2>
+                <p>Identifying task layers (reading) vs ambient layers (socializing) in a hybrid commercial space.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 14px; font-weight: 600;">Hierarchy: Multi-functional Layering</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U3-03/assets/bookstore.jpg" alt="Bookstore and café">
+            </div>
+        </div>
+        <div class="slide-number">06</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U3-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h1>Analysis<br>Synthesis</h1>
+                <p>Observe, Identify, and Apply. The language of light is universal.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 12px; letter-spacing: 4px; font-weight: 800; text-transform: uppercase;">LiteRight Academy | lighting design course</p>
+            </div>
+        </div>
+        <div class="slide-number">07</div>
+    </section></div><div id="U4-01" class="unit-group"><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content title-slide">
+            <div class="slide-text">
+                <p class="subtitle">Unit 04 — Source Analysis</p>
+                <h1>Describe<br>a Light<br>Source</h1>
+                <p style="font-size: 18px; max-width: 500px; margin-top: 10px; font-weight: 300;">Technical evaluation and functional assessment of luminaire performance in the workstation.</p>
+                <div class="instructor-info">
+                    <div class="avatar">
+                        <img src="../resources/U4-01/assets/avatar.webp" alt="IFTHIKHAR ILYAS">
+                    </div>
+                    <div class="instructor-text">
+                        <p class="role">Instructor</p>
+                        <p class="instructor-name">IFTHIKHAR ILYAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-01/assets/fixture_macro.png" alt="Light Source Detail">
+            </div>
+        </div>
+        <div class="slide-number">01</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Specifications</h3>
+                <h2>Decorative LED</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">18W</div>
+                        <div class="stat-label">Power</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">127V</div>
+                        <div class="stat-label">Voltage</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">180º</div>
+                        <div class="stat-label">Angle</div>
+                    </div>
+                </div>
+                <ul style="margin-top: 30px;">
+                    <li><strong>Brand:</strong> Adesi</li>
+                    <li><strong>Model:</strong> Armonía</li>
+                    <li><strong>Temperature:</strong> Cold White (Approx. 5000K-6000K)</li>
+                    <li><strong>Frequency:</strong> 60 HZ</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-01/assets/img-000.jpg" alt="Adesi Armonia External">
+            </div>
+        </div>
+        <div class="slide-number">02</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U4-01/assets/img-001.jpg" alt="Adesi Armonia Internal LED Array">
+            </div>
+            <div class="slide-text">
+                <h3>Technical Audit</h3>
+                <h2>Array Analysis</h2>
+                <p>The internal LED configuration provides a 180º spread, ideal for ambient luminescence but requiring supplemental task light for high-focus work.</p>
+                <div class="instructor-info" style="margin-top: 40px;">
+                    <div class="avatar">
+                        <img src="../resources/U4-01/assets/avatar.webp" alt="IFTHIKHAR ILYAS">
+                    </div>
+                    <div class="instructor-text">
+                        <p class="role">Instructor</p>
+                        <p class="instructor-name">IFTHIKHAR ILYAS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">03</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Functional Map</h3>
+                <h2>Appropriateness</h2>
+                <p><strong>Job Performance:</strong> Excellent for ambient luminescence and digital screen work after dusk. However, it fails to provide sufficient task light for detailed physical activities.</p>
+                <p><strong>Recommendations:</strong></p>
+                <ul>
+                    <li>Add a dedicated task light (desk lamp) for high-focus activities.</li>
+                    <li>Consider a clip-on light to save space.</li>
+                    <li>Ensure the color temperature remains consistent with the primary source.</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-01/assets/fixture_macro.png" alt="High Quality Macro">
+            </div>
+        </div>
+        <div class="slide-number">04</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-01/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h1>Data-Driven<br>Choices</h1>
+                <p>Technical specs inform the aesthetic potential of every space.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 12px; letter-spacing: 4px; font-weight: 800; text-transform: uppercase;">LiteRight Academy | lighting design course</p>
+            </div>
+        </div>
+        <div class="slide-number">04</div>
+    </section></div><div id="U4-02" class="unit-group"><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content title-slide">
+            <div class="slide-text">
+                <p class="subtitle">Unit 04 — Design</p>
+                <h1>Drawing<br>Light</h1>
+                <p style="font-size: 18px; max-width: 500px; margin-top: 10px; font-weight: 300;">Conceptual Lighting Presentation: Synthesizing analysis, strategy, and technical specifications into a cohesive design vision.</p>
+                <div class="instructor-info">
+                    <div class="avatar">
+                        <img src="../resources/U4-02/assets/avatar.webp" alt="IFTHIKHAR ILYAS">
+                    </div>
+                    <div class="instructor-text">
+                        <p class="role">Instructor</p>
+                        <p class="instructor-name">IFTHIKHAR ILYAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-02/assets/title_bg.png" alt="Drawing Light Concept">
+            </div>
+        </div>
+        <div class="slide-number">01</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Baseline</h3>
+                <h2>Current State</h2>
+                <ul>
+                    <li><strong>Ambient:</strong> General LED ceiling light (Cold Temperature).</li>
+                    <li><strong>Decorative:</strong> Table fixture with E27 lamp (Warm).</li>
+                    <li><strong>Atmospheric:</strong> Candlelight accents.</li>
+                </ul>
+                <p style="margin-top: 20px;">The primary challenge is the cold, uneven ambient light that lacks multi-functional flexibility.</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-02/assets/img-001.jpg" alt="Current Space View">
+            </div>
+        </div>
+        <div class="slide-number">02</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U4-02/assets/ana_flores.png" alt="Ana Flores">
+            </div>
+            <div class="slide-text">
+                <h3>The User</h3>
+                <h2>Ana Flores</h2>
+                <p>Freelancer | 32 Years Old</p>
+                <p><strong>Daily Routine:</strong> 9-10 hours of screen-based work, followed by reading and craft-focused pastimes.</p>
+                <p><strong>Needs:</strong> High-focus task lighting for the desk, accurate color rendering for the closet, and soft, warm ambient light for relaxation.</p>
+            </div>
+        </div>
+        <div class="slide-number">03</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Strategy</h3>
+                <h2>Lighting Hierarchy</h2>
+                <ol>
+                    <li><strong>Desk Area:</strong> Cold temperature for concentration.</li>
+                    <li><strong>Vanity Table:</strong> Cold temperature for accurate grooming/makeup.</li>
+                    <li><strong>Closet:</strong> Warm temperature with high CRI (Museum style) to distinguish garment colors.</li>
+                </ol>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-02/assets/img-004.jpg" alt="Zoning Diagram">
+            </div>
+        </div>
+        <div class="slide-number">04</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U4-02/assets/img-010.jpg" alt="Light Source Collage">
+            </div>
+            <div class="slide-text">
+                <h3>Solution</h3>
+                <h2>New Light Sources</h2>
+                <ul>
+                    <li><strong>Ambient:</strong> Recessed LED panels (Warm).</li>
+                    <li><strong>Task:</strong> Adjustable desk lamp with clamp.</li>
+                    <li><strong>Accent:</strong> LED strips at 45º for closet shelving.</li>
+                    <li><strong>Functional:</strong> Wall-mounted LED for vanity.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide-number">05</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Inspiration</h3>
+                <h2>Atmosphere & Closet</h2>
+                <p>A transition from cold, sterile environments to warm, layered sanctuaries. Closet lighting focusing on hidden strips for a museum-like display.</p>
+            </div>
+            <div class="slide-image dual-image">
+                <div class="image-wrapper">
+                    <img src="../resources/U4-02/assets/img-011.jpg" alt="Ambient Mood">
+                </div>
+                <div class="image-wrapper">
+                    <img src="../resources/U4-02/assets/img-016.jpg" alt="Closet Mood">
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">06</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image dual-image">
+                <div class="image-wrapper">
+                    <img src="../resources/U4-02/assets/img-017.jpg" alt="Vanity Mood">
+                </div>
+                <div class="image-wrapper">
+                    <img src="../resources/U4-02/assets/img-018.jpg" alt="Desk Mood">
+                </div>
+            </div>
+            <div class="slide-text">
+                <h3>Inspiration</h3>
+                <h2>Vanity & Workspace</h2>
+                <p>Direct, glare-free lighting for the vanity mirror and ergonomic, adjustable task light for the workstation.</p>
+            </div>
+        </div>
+        <div class="slide-number">07</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Product Sheet</h3>
+                <h2>Recessed Panel</h2>
+                <ul style="font-size: 14px;">
+                    <li><strong>Brand:</strong> Tecnolite</li>
+                    <li><strong>Power:</strong> 10 W</li>
+                    <li><strong>Luminous Flux:</strong> 970 lm</li>
+                    <li><strong>CCT:</strong> 3000 K (Soft Warm)</li>
+                    <li><strong>CRI:</strong> 82</li>
+                    <li><strong>IP Rating:</strong> 30</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-02/assets/img-039.jpg" alt="Tecnolite Panel Spec">
+            </div>
+        </div>
+        <div class="slide-number">08</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U4-02/assets/img-040.jpg" alt="SIECLED Strip Spec">
+            </div>
+            <div class="slide-text">
+                <h3>Product Sheet</h3>
+                <h2>LED Strip & Profile</h2>
+                <ul style="font-size: 14px;">
+                    <li><strong>Brand:</strong> SIECLED</li>
+                    <li><strong>Output:</strong> 7.5 W/m</li>
+                    <li><strong>CCT:</strong> 2700 K</li>
+                    <li><strong>CRI:</strong> 95 (Excellent)</li>
+                    <li><strong>Density:</strong> 144 LEDs/m</li>
+                    <li><strong>Profile:</strong> Anodized Aluminum with PMMA diffuser</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide-number">09</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-02/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h1>From Concept<br>to Reality</h1>
+                <p>Drawing light is the bridge between imagination and engineering.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 12px; letter-spacing: 4px; font-weight: 800; text-transform: uppercase;">LiteRight Academy | lighting design course</p>
+            </div>
+        </div>
+        <div class="slide-number">10</div>
+    </section></div><div id="U4-03" class="unit-group"><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content title-slide">
+            <div class="slide-text">
+                <p class="subtitle">Professional Case Study</p>
+                <h1>Café CDMX<br>Conceptual<br>Proposal</h1>
+                <p style="font-size: 18px; max-width: 500px; margin-top: 10px; font-weight: 300;">A deep dive into a real-world LumLum project: Designing light to enhance architectural texture and spatial narrative.</p>
+                <div class="instructor-info">
+                    <div class="avatar">
+                        <img src="../resources/U4-03/assets/avatar.webp" alt="IFTHIKHAR ILYAS">
+                    </div>
+                    <div class="instructor-text">
+                        <p class="role">Instructor</p>
+                        <p class="instructor-name">IFTHIKHAR ILYAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-03/assets/cafe_title.png" alt="Café CDMX Interior">
+            </div>
+        </div>
+        <div class="slide-number">01</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Philosophy</h3>
+                <h2>The Message</h2>
+                <p>Our goal is to always support the message of the interior architecture.</p>
+                <ul>
+                    <li>Highlight the predominant texture (Chukum).</li>
+                    <li>Reveal warmth and structural rhythm.</li>
+                    <li>Create moments of "brilliant surprises" throughout the space.</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-03/assets/img-030.jpg" alt="Texture and Materiality">
+            </div>
+        </div>
+        <div class="slide-number">02</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image grid-image">
+                <img src="../resources/U4-03/assets/img-003.png" alt="Technical Elements Diagram">
+            </div>
+            <div class="slide-text">
+                <h3>Standards</h3>
+                <h2>Technical Guidelines</h2>
+                <p><strong>Temperature:</strong> Warm tones (max 3000K) for public spaces; Neutral (4000K) for the kitchen.</p>
+                <p><strong>Integration:</strong></p>
+                <ul>
+                    <li>Recessed (Hidden) fixtures for single-height spaces.</li>
+                    <li>Suspended decorative lights for double/triple heights.</li>
+                    <li>Graze lighting for transition areas (stairs/hallways).</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide-number">03</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Interaction</h3>
+                <h2>Wall Lighting</h2>
+                <div class="activity-list" style="margin-top: 40px;">
+                    <div class="activity-category">
+                        <h3>Indirect (Type D)</h3>
+                        <p style="font-size: 14px;">Directed at the wall to reveal texture and depth.</p>
+                    </div>
+                    <div class="activity-category">
+                        <h3>Direct (Type E)</h3>
+                        <p style="font-size: 14px;">Functional lighting to define spaces and set tables.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-03/assets/img-005.png" alt="Wall Lighting Examples">
+            </div>
+        </div>
+        <div class="slide-number">04</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U4-03/assets/img-015.jpg" alt="Ground Floor Concept">
+            </div>
+            <div class="slide-text">
+                <h3>Zoning</h3>
+                <h2>Ground Floor</h2>
+                <p>Focusing on the retail area and terraces. Directional recessed fixtures on rails provide a continuous visual experience across the bar.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 14px; font-weight: 600;">Concept: Retail Continuous Flow</p>
+            </div>
+        </div>
+        <div class="slide-number">05</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Atmosphere</h3>
+                <h2>Main Patio</h2>
+                <p>Graze lighting on the stairs indicates access and creates a dramatic rhythm. Warm tones dominate to maintain the evening sanctuary feel.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 14px; font-weight: 600;">Concept: Staircase Rhythm</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-03/assets/img-016.jpg" alt="Patio Lighting">
+            </div>
+        </div>
+        <div class="slide-number">06</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h3>Finishes</h3>
+                <h2>Materiality</h2>
+                <div class="stats-grid" style="margin-bottom: 40px;">
+                    <div class="stat-item">
+                        <div class="stat-value">Brass</div>
+                        <div class="stat-label">Antique Finish</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">Chukum</div>
+                        <div class="stat-label">Wall Texture</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">Stone</div>
+                        <div class="stat-label">Architectural Base</div>
+                    </div>
+                </div>
+                <p style="font-size: 16px;">The interplay between warm light and antique brass creates a timeless, premium atmosphere.</p>
+            </div>
+        </div>
+        <div class="slide-number">07</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-03/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h1>Beyond<br>Illumination</h1>
+                <p>Great lighting doesn't just show a space; it tells its story.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 12px; letter-spacing: 4px; font-weight: 800; text-transform: uppercase;">LiteRight Academy | lighting design course</p>
+            </div>
+        </div>
+        <div class="slide-number">08</div>
+    </section></div><div id="U4-04" class="unit-group"><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-04/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content title-slide">
+            <div class="slide-text">
+                <p class="subtitle">Unit 04 — Representation</p>
+                <h1>How to<br>Draw Light</h1>
+                <p style="font-size: 18px; max-width: 500px; margin-top: 10px; font-weight: 300;">Visualizing the invisible: mastering the techniques to communicate lighting intention, temperature, and spatial impact.</p>
+                <div class="instructor-info">
+                    <div class="avatar">
+                        <img src="../resources/U4-04/assets/avatar.webp" alt="IFTHIKHAR ILYAS">
+                    </div>
+                    <div class="instructor-text">
+                        <p class="role">Instructor</p>
+                        <p class="instructor-name">IFTHIKHAR ILYAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-04/assets/sketch_title.png" alt="Sketching Light">
+            </div>
+        </div>
+        <div class="slide-number">01</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-04/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Symbology</h3>
+                <h2>Color Coding</h2>
+                <div class="activity-list" style="margin-top: 40px;">
+                    <div class="activity-category">
+                        <h3>Blue</h3>
+                        <p style="font-size: 14px;">Very Cold (Convenience stores, fast food).</p>
+                        <h3 style="margin-top: 20px;">White</h3>
+                        <p style="font-size: 14px;">Neutral / Daylight (Offices, functional areas).</p>
+                    </div>
+                    <div class="activity-category">
+                        <h3>Yellow</h3>
+                        <p style="font-size: 14px;">Warm (Restaurants, rest areas).</p>
+                        <h3 style="margin-top: 20px;">Amber</h3>
+                        <p style="font-size: 14px;">Very Warm (Candlelight, fire, atmospheric).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-04/assets/img-001.jpg" alt="Color Temperature Sketches">
+            </div>
+        </div>
+        <div class="slide-number">02</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-04/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U4-04/assets/img-002.jpg" alt="Installation Sketches">
+            </div>
+            <div class="slide-text">
+                <h3>Drafting</h3>
+                <h2>Installation Logic</h2>
+                <p>Drawing in cross-section is essential to communicate how fixtures are integrated into the architecture.</p>
+                <ul>
+                    <li><strong>Recessed:</strong> Embedded in the ceiling/slab for a seamless look.</li>
+                    <li><strong>Superimposed:</strong> Surface mounted for easy access and retrofitting.</li>
+                    <li><strong>Suspended:</strong> Hanging fixtures for volume and decorative impact.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide-number">03</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-04/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Projection</h3>
+                <h2>The Beam of Light</h2>
+                <p>Visualizing the photometric footprint of the luminaire.</p>
+                <ul>
+                    <li><strong>Narrow Beams:</strong> Dramatic focal glow, high contrast.</li>
+                    <li><strong>Wide Beams:</strong> Uniform ambient luminescence, broad coverage.</li>
+                    <li><strong>Directionality:</strong> Indicating the tilt and aim to assist on-site installation.</li>
+                </ul>
+            </div>
+            <div class="slide-image grid-image">
+                <img src="../resources/U4-04/assets/img-003.jpg" alt="Beam Projection Diagrams">
+            </div>
+        </div>
+        <div class="slide-number">04</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-04/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <div class="dual-image">
+                    <div class="image-wrapper">
+                        <img src="../resources/U4-04/assets/img-011.jpg" alt="Sketch">
+                        <span>The Sketch</span>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="../resources/U4-04/assets/img-012.jpg" alt="Photo">
+                        <span>The Reality</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-text">
+                <h3>Execution</h3>
+                <h2>Linear Lighting</h2>
+                <p>Demonstrating how a warm, linear light source in a ceiling register transforms a commercial bench area. The sketch accurately predicts the symmetrical beam and gradient.</p>
+            </div>
+        </div>
+        <div class="slide-number">05</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-04/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Execution</h3>
+                <h2>Omnidirectional Art</h2>
+                <p>Using sketches to define the intention for wall-mounted decorative pieces. The reality confirms the warm, inviting atmosphere envisioned in the draft.</p>
+            </div>
+            <div class="slide-image">
+                <div class="dual-image">
+                    <div class="image-wrapper">
+                        <img src="../resources/U4-04/assets/img-013.jpg" alt="Sketch">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="../resources/U4-04/assets/img-014.jpg" alt="Photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">06</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-04/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U4-04/assets/img-015.jpg" alt="Neon Lighting Example">
+            </div>
+            <div class="slide-text">
+                <h3>Innovation</h3>
+                <h2>Chromatic Intent</h2>
+                <p>Not all light is white. Representing neon pink and cold blue accents requires precise chromatic rendering to ensure client alignment and successful technical execution.</p>
+            </div>
+        </div>
+        <div class="slide-number">07</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-04/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h1>Master the<br>Draft</h1>
+                <p>Observe the source. Respect the surface. Draw the light.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 12px; letter-spacing: 4px; font-weight: 800; text-transform: uppercase;">LiteRight Academy | lighting design course</p>
+            </div>
+        </div>
+        <div class="slide-number">08</div>
+    </section></div><div id="U4-05" class="unit-group"><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-05/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content title-slide">
+            <div class="slide-text">
+                <p class="subtitle">Unit 04 — Final Milestone</p>
+                <h1>Final<br>Project<br>Plans</h1>
+                <p style="font-size: 18px; max-width: 500px; margin-top: 10px; font-weight: 300;">Translating design concepts into technical reality: delivering the architectural blueprints and lighting sections for your final course project.</p>
+                <div class="instructor-info">
+                    <div class="avatar">
+                        <img src="../resources/U4-05/assets/avatar.webp" alt="IFTHIKHAR ILYAS">
+                    </div>
+                    <div class="instructor-text">
+                        <p class="role">Instructor</p>
+                        <p class="instructor-name">IFTHIKHAR ILYAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-05/assets/final_title_bg.png" alt="Final Project Blueprint">
+            </div>
+        </div>
+        <div class="slide-number">01</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-05/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Layout</h3>
+                <h2>General Plan</h2>
+                <p>The foundation of the project: defining the 20.14m x 19.29m spatial envelope and identifying core functional zones (Kitchen, Bar, Access).</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 14px; font-weight: 600;">Scale: 1:30 Detail</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-05/assets/img-000.jpg" alt="General Floor Plan">
+            </div>
+        </div>
+        <div class="slide-number">02</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-05/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U4-05/assets/img-001.jpg" alt="Section A-A">
+            </div>
+            <div class="slide-text">
+                <h3>Verticality</h3>
+                <h2>Section A-A</h2>
+                <p>Analyzing the relationship between recessed ceiling heights and vertical wall surfaces. Essential for calculating beam spreads and graze angles.</p>
+            </div>
+        </div>
+        <div class="slide-number">03</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-05/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content">
+            <div class="slide-text">
+                <h3>Verticality</h3>
+                <h2>Section B-B</h2>
+                <p>Detailing the integration of new Durock fabrications with existing columns. This section defines the structural rhythm and fixture placement.</p>
+            </div>
+            <div class="slide-image">
+                <img src="../resources/U4-05/assets/img-004.jpg" alt="Section B-B">
+            </div>
+        </div>
+        <div class="slide-number">04</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-05/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content inverse">
+            <div class="slide-image">
+                <img src="../resources/U4-05/assets/img-002.jpg" alt="Wall Detail">
+            </div>
+            <div class="slide-text">
+                <h3>Technical</h3>
+                <h2>Material Fabrication</h2>
+                <ul>
+                    <li><strong>Existing Walls:</strong> Muro existente.</li>
+                    <li><strong>New Walls:</strong> Durock fabrications.</li>
+                    <li><strong>Structural:</strong> Existing Columns (Columna existente).</li>
+                </ul>
+                <p style="margin-top: 20px;">Precise material identification ensures that the lighting effect interacts correctly with the surface texture.</p>
+            </div>
+        </div>
+        <div class="slide-number">05</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-05/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h1>Final<br>Checklist</h1>
+                <div class="activity-list" style="margin-top: 30px; text-align: left;">
+                    <p>✓ Floor Plan at 1:30 scale</p>
+                    <p>✓ Section A-A and B-B</p>
+                    <p>✓ Material and Fabrication details</p>
+                    <p>✓ Unified LiteRight Academy Branding</p>
+                </div>
+                <div class="cta-line"></div>
+                <p style="font-size: 12px; letter-spacing: 4px; font-weight: 800; text-transform: uppercase;">LiteRight Academy | Final Project</p>
+            </div>
+        </div>
+        <div class="slide-number">06</div>
+    </section><section class="slide">
+        <div class="branding-header">LiteRight Academy</div>
+        <div class="logo-container">
+            <img src="../resources/U4-05/assets/logo.png" alt="Litelab Logo">
+        </div>
+        <div class="slide-content center">
+            <div class="slide-text centered">
+                <h1>The Journey<br>Begins</h1>
+                <p>Congratulations. Your design is ready to change the world, one light beam at a time.</p>
+                <div class="cta-line"></div>
+                <p style="font-size: 12px; letter-spacing: 4px; font-weight: 800; text-transform: uppercase;">LiteRight Academy | Your instructor: IFTHIKHAR ILYAS</p>
+            </div>
+        </div>
+        <div class="slide-number">07</div>
+    </section></div>
+    </div>
+    <button class="print-fab" onclick="window.print()">🖨️ Export as PDF</button>
+</body>
+</html>
