@@ -3,6 +3,11 @@
  * This script injects the shared Topbar and Sidebar into the page.
  */
 
+// Global toggle function for dropdowns
+window.toggleDropdown = function(el) {
+    el.classList.toggle('active');
+};
+
 const NAV_HTML = `
 <!-- ─── Top Bar ─── -->
 <header class="topbar">
@@ -10,68 +15,59 @@ const NAV_HTML = `
   <div class="topbar-brand">
     <span>💡</span> LITELAB Academy
   </div>
-  <div class="topbar-title">Course Progress & Content Portal</div>
+  <div class="topbar-title">Academy Course Management</div>
 </header>
 
 <!-- ─── Sidebar Navigation ─── -->
 <nav class="sidebar" id="sidebar">
-  <div class="nav-section">Navigation</div>
+  <div class="nav-section">LITELAB Global</div>
   <a class="nav-link" data-page="library" href="/index.html">
-    <span class="nav-icon">📚</span> Course Library
+    <span class="nav-icon">📚</span> Academy Library
   </a>
   <a class="nav-link" data-page="logs" href="/logs.html">
-    <span class="nav-icon">📝</span> Academy Logs
+    <span class="nav-icon">📝</span> Global Update Logs
   </a>
 
-  <!-- Course 1 Dropdown Section -->
-  <div class="nav-section collapsible active" onclick="toggleDropdown(this)">
-    <span>Course 1: Lighting Design</span>
+  <!-- Course 1 Collapsible Dropdown -->
+  <div class="nav-section collapsible active" onclick="window.toggleDropdown(this)" style="margin-top: 20px; border-top: 1px solid var(--border); padding-top: 15px;">
+    <span>⚡ COURSE 1: Lighting Design</span>
     <span class="chevron">▼</span>
   </div>
   <div class="dropdown-container">
-    <a class="nav-link" data-page="home" href="/c1/index.html">
-      <span class="nav-icon">🏠</span> Course 1 Home
-    </a>
-    <a class="nav-link" data-page="tree" href="/c1/pages/tree.html">
-      <span class="nav-icon">🌳</span> Course Tree
-    </a>
+    <div class="dropdown-inner" style="padding-bottom: 20px;">
+        <a class="nav-link" data-page="home" href="/c1/index.html">
+          <span class="nav-icon">🏠</span> C1 Home (Overview)
+        </a>
+        <a class="nav-link" data-page="tree" href="/c1/pages/tree.html">
+          <span class="nav-icon">🌳</span> C1 Course Tree
+        </a>
 
-    <div class="nav-sub-section">Curriculum</div>
-    <a class="nav-link" data-page="course-m1" href="/c1/pages/course-m1.html">
-      <span class="nav-icon">1️⃣</span> Module 1: Intro
-    </a>
-    <a class="nav-link" data-page="course-m2" href="/c1/pages/course-m2.html">
-      <span class="nav-icon">2️⃣</span> Module 2: Light
-    </a>
-    <a class="nav-link" data-page="course-m3" href="/c1/pages/course-m3.html">
-      <span class="nav-icon">3️⃣</span> Module 3: Analysis
-    </a>
-    <a class="nav-link" data-page="course-m4" href="/c1/pages/course-m4.html">
-      <span class="nav-icon">4️⃣</span> Module 4: Concept
-    </a>
-    <a class="nav-link" data-page="course-m5" href="/c1/pages/course-m5.html">
-      <span class="nav-icon">5️⃣</span> Module 5: Tech
-    </a>
-    <a class="nav-link" data-page="course-m6" href="/c1/pages/course-m6.html">
-      <span class="nav-icon">6️⃣</span> Module 6: Docs
-    </a>
+        <div class="nav-sub-section">📚 Curriculum Modules</div>
+        <a class="nav-link" data-page="course-m1" href="/c1/pages/course-m1.html">1. Intro to LITELAB</a>
+        <a class="nav-link" data-page="course-m2" href="/c1/pages/course-m2.html">2. Light & Perception</a>
+        <a class="nav-link" data-page="course-m3" href="/c1/pages/course-m3.html">3. Spatial Analysis</a>
+        <a class="nav-link" data-page="course-m4" href="/c1/pages/course-m4.html">4. Conceptualization</a>
+        <a class="nav-link" data-page="course-m5" href="/c1/pages/course-m5.html">5. Technique</a>
+        <a class="nav-link" data-page="course-m6" href="/c1/pages/course-m6.html">6. Documentation</a>
+        <a class="nav-link" data-page="course-final" href="/c1/pages/course-final.html">🎓 Final Project</a>
 
-    <div class="nav-sub-section">Scripts</div>
-    <div class="scripts-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); padding: 5px 15px; gap: 5px;">
-        <a class="nav-link-script" data-page="s01" href="/c1/pages/s01.html" title="1.1">1.1</a>
-        <a class="nav-link-script" data-page="s02" href="/c1/pages/s02.html" title="1.2">1.2</a>
-        <a class="nav-link-script" data-page="s03" href="/c1/pages/s03.html" title="1.3">1.3</a>
-        <a class="nav-link-script" data-page="s04" href="/c1/pages/s04.html" title="2.1">2.1</a>
-        <a class="nav-link-script" data-page="s05" href="/c1/pages/s05.html" title="2.2">2.2</a>
-        <a class="nav-link-script" data-page="s06" href="/c1/pages/s06.html" title="2.3">2.3</a>
-        <a class="nav-link-script" data-page="s07" href="/c1/pages/s07.html" title="3.1">3.1</a>
-        <a class="nav-link-script" data-page="s08" href="/c1/pages/s08.html" title="3.2">3.2</a>
-        <a class="nav-link-script" data-page="s09" href="/c1/pages/s09.html" title="3.3">3.3</a>
-        <a class="nav-link-script" data-page="s10" href="/c1/pages/s10.html" title="4.1">4.1</a>
-        <a class="nav-link-script" data-page="s11" href="/c1/pages/s11.html" title="4.2">4.2</a>
-        <a class="nav-link-script" data-page="s12" href="/c1/pages/s12.html" title="4.3">4.3</a>
-        <a class="nav-link-script" data-page="s13" href="/c1/pages/s13.html" title="4.4">4.4</a>
-        <a class="nav-link-script" data-page="s14" href="/c1/pages/s14.html" title="4.5">4.5</a>
+        <div class="nav-sub-section">🎬 Video Scripts (1.1 - 4.5)</div>
+        <div class="scripts-grid">
+            <a class="nav-link-script" data-page="s01" href="/c1/pages/s01.html">1.1</a>
+            <a class="nav-link-script" data-page="s02" href="/c1/pages/s02.html">1.2</a>
+            <a class="nav-link-script" data-page="s03" href="/c1/pages/s03.html">1.3</a>
+            <a class="nav-link-script" data-page="s04" href="/c1/pages/s04.html">2.1</a>
+            <a class="nav-link-script" data-page="s05" href="/c1/pages/s05.html">2.2</a>
+            <a class="nav-link-script" data-page="s06" href="/c1/pages/s06.html">2.3</a>
+            <a class="nav-link-script" data-page="s07" href="/c1/pages/s07.html">3.1</a>
+            <a class="nav-link-script" data-page="s08" href="/c1/pages/s08.html">3.2</a>
+            <a class="nav-link-script" data-page="s09" href="/c1/pages/s09.html">3.3</a>
+            <a class="nav-link-script" data-page="s10" href="/c1/pages/s10.html">4.1</a>
+            <a class="nav-link-script" data-page="s11" href="/c1/pages/s11.html">4.2</a>
+            <a class="nav-link-script" data-page="s12" href="/c1/pages/s12.html">4.3</a>
+            <a class="nav-link-script" data-page="s13" href="/c1/pages/s13.html">4.4</a>
+            <a class="nav-link-script" data-page="s14" href="/c1/pages/s14.html">4.5</a>
+        </div>
     </div>
   </div>
 </nav>
@@ -81,46 +77,47 @@ const NAV_HTML = `
 <style>
 .collapsible {
     display: flex; justify-content: space-between; align-items: center;
-    cursor: pointer; transition: background 0.2s;
+    cursor: pointer; padding: 10px 20px; font-weight: 800; font-size: 11px;
+    letter-spacing: 0.5px; color: var(--accent); background: var(--accent-glow);
+    border-radius: 8px; margin: 0 10px;
 }
-.collapsible:hover { background: rgba(0,0,0,0.05); }
+.collapsible:hover { opacity: 0.8; }
 .chevron { font-size: 10px; transition: transform 0.3s; }
 .collapsible.active .chevron { transform: rotate(180deg); }
 .dropdown-container {
-    max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;
-    background: rgba(0,0,0,0.02);
+    max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .collapsible.active + .dropdown-container {
-    max-height: 2000px; /* Large enough to fit content */
+    max-height: 2500px;
 }
 .nav-sub-section {
-    padding: 8px 30px 4px; font-size: 9px; font-weight: 700;
-    text-transform: uppercase; color: var(--text-muted);
+    padding: 15px 25px 8px; font-size: 10px; font-weight: 800;
+    text-transform: uppercase; color: var(--text-muted); border-bottom: 1px solid var(--border);
+    margin-bottom: 5px;
+}
+.scripts-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; padding: 10px 20px;
 }
 .nav-link-script {
-    display: flex; align-items: center; justify-content: center;
-    padding: 4px; font-size: 11px; border-radius: 4px;
-    background: var(--bg-primary); border: 1px solid var(--border);
-    text-decoration: none; color: var(--text-secondary);
+    aspect-ratio: 1; display: flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 600; border-radius: 6px;
+    background: var(--bg-card); border: 1px solid var(--border);
+    text-decoration: none; color: var(--text-secondary); transition: all 0.2s;
 }
 .nav-link-script:hover, .nav-link-script.active {
-    background: var(--accent-glow); border-color: var(--accent); color: var(--accent);
+    background: var(--accent); color: white; border-color: var(--accent);
 }
 </style>
 `;
 
 function initLayout(currentPageId) {
-  // Insert Nav
   document.body.insertAdjacentHTML('afterbegin', NAV_HTML);
   
-  // Highlight active link
   const activeLink = document.querySelector(`.nav-link[data-page="${currentPageId}"], .nav-link-script[data-page="${currentPageId}"]`);
   if (activeLink) activeLink.classList.add('active');
 
-  // Activate all sections on the current page
   document.querySelectorAll('.section').forEach(s => s.classList.add('active'));
 
-  // Calculate relative path depth
   const pathParts = window.location.pathname.split('/').filter(p => p.length > 0);
   const isGithubPages = window.location.hostname.includes('github.io');
   const actualParts = isGithubPages ? pathParts.slice(1) : pathParts;
@@ -140,12 +137,8 @@ function initLayout(currentPageId) {
   fixLinks();
 }
 
-function toggleDropdown(el) {
-    el.classList.toggle('active');
-}
-
 function toggleSidebar() {
-  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebar')?.classList.toggle('open');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
