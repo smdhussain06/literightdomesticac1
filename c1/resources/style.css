@@ -3,9 +3,10 @@
 
 :root {
     --bg-color: #ffffff;
-    --text-color: #111111;
+    --text-color: #1a1a1a;
     --accent-color: #b8860b;
-    --muted-text: #555555;
+    --muted-text: #666666;
+    --ui-border: #e0e0e0;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -14,7 +15,7 @@ body {
     background-color: #ffffff;
     color: var(--text-color);
     font-family: 'Poppins', sans-serif;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .slide {
@@ -24,38 +25,70 @@ body {
     max-height: 56.25vw;
     margin: 0 auto;
     background-color: var(--bg-color);
-    padding: 8vh;
+    padding: 10vh;
     position: relative;
     page-break-after: always;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.slide-content {
+.slide-header {
     display: flex;
-    gap: 5vh;
-    align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5vh;
 }
 
-.slide-text {
+.unit-label {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.8vh;
+    text-transform: uppercase;
+    letter-spacing: 0.5vh;
+    color: var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 0.5vh;
+}
+
+.logo-container {
+    height: 3.5vh;
+}
+
+.logo-container img {
+    height: 100%;
+    filter: brightness(0);
+}
+
+.slide-main {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 8vh;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
+    align-items: center;
+}
+
+.slide-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6vh;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 3vh;
+    letter-spacing: -0.1vh;
+}
+
+.slide-text p {
+    font-size: 2.8vh;
+    color: var(--muted-text);
+    font-weight: 300;
 }
 
 .slide-image {
-    flex: 1;
+    width: 100%;
     height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #fdfdfd;
     border-radius: 4px;
     overflow: hidden;
-    background: #f9f9f9;
+    border: 1px solid var(--ui-border);
 }
 
 .slide-image img {
@@ -64,48 +97,49 @@ body {
     object-fit: cover;
 }
 
-h1 {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 8vh;
-    font-weight: 700;
-    line-height: 1.1;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 5vh;
-    font-weight: 500;
-    color: var(--accent-color);
-    text-transform: uppercase;
-}
-
-p {
-    font-size: 3vh;
-    color: var(--muted-text);
-    font-weight: 300;
-}
-
-.logo-container {
+.slide-footer {
     position: absolute;
-    top: 5vh;
-    right: 5vh;
-    height: 4vh;
+    bottom: 5vh;
+    left: 10vh;
+    right: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--ui-border);
+    padding-top: 2vh;
 }
 
-.logo-container img {
-    height: 100%;
-    filter: brightness(0);
+.footer-brand {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.4vh;
+    text-transform: uppercase;
+    letter-spacing: 0.2vh;
+    color: var(--muted-text);
 }
 
 .slide-number {
-    position: absolute;
-    bottom: 5vh;
-    right: 5vh;
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 2vh;
-    letter-spacing: 0.5vh;
-    color: var(--muted-text);
+    font-size: 1.6vh;
+    font-weight: 700;
+}
+
+.title-slide {
+    background-color: #fafafa;
+}
+
+.title-slide .slide-main {
+    grid-template-columns: 1fr 1fr;
+}
+
+.provider-portrait {
+    height: 70vh !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.provider-portrait img {
+    object-fit: contain !important;
+    object-position: bottom;
 }
 
 @media print {
@@ -113,7 +147,7 @@ p {
     body { background: white; }
     .slide {
         width: 16in !important; height: 9in !important;
-        margin: 0 !important; padding: 80px !important;
+        margin: 0 !important; padding: 100px !important;
         border: none !important; box-shadow: none !important;
         page-break-after: always;
         -webkit-print-color-adjust: exact;
